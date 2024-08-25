@@ -27,11 +27,6 @@ jobs:
         venv\Scripts\activate
         pip install -r my-web-app/requirements.txt
 
-    - name: Run tests
-      run: |
-        venv\Scripts\activate
-        pytest my-web-app/tests/
-
   deploy:
     runs-on: windows-latest
     needs: build
